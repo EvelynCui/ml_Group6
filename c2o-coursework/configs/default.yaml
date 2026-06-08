@@ -1,0 +1,33 @@
+raw_data_dir: data
+output_dir: outputs
+random_seed: 42
+development_start: '2010-01-01'
+development_end: '2024-12-31'
+train_end: '2018-12-31'
+validation_start: '2019-01-01'
+validation_end: '2021-12-31'
+development_test_start: '2022-01-01'
+trading_days_per_year: 252
+aum_levels:
+  50m: 50000000
+  250m: 250000000
+  1b: 1000000000
+headline_aum_label: 250m
+headline_benchmark: SP500_TR
+participation_cap: 0.05
+min_price: 5.0
+vol_min_annualised: 0.02
+vol_max_annualised: 2.0
+adv_absolute_floor: 5000000
+min_capacity_ratio: 0.25
+assumed_n_names: 200
+earnings_exclusion_days: 1
+commission_bps_per_leg: 0.5
+auction_slippage_bps_per_leg: 1.5
+borrow_cost_bps_pa:
+  A: 40.0
+  B: 200.0
+  C: 800.0
+basket_fractions: [0.01, 0.025, 0.05, 0.10]
+headline_short_treatment: tiered
+borrow_tier_method: simple
