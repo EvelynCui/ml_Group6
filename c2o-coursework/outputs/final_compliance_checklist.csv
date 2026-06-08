@@ -1,0 +1,31 @@
+check_name,status,detail,severity,evidence_file
+data end date <= 2024-12-31,PASS,"max dates panel=2024-12-31, alpha=2024-12-31, headline=2024-12-30",critical,c2o_step1_clean_panel.parquet
+no 2025/2026 data used,PASS,all live Step1/4/5 data max year <= 2024,critical,step4_alpha_scores.parquet
+yearly top-1000 universe uses prior year-end market cap,PASS,universe_asof_date year equals year-1 for every universe year,critical,step1_yearly_mcap_universe_audit.csv
+12-month history requirement enforced,PASS,min months_hist=12.06,critical,c2o_step1_yearly_universe_map.parquet
+strict one-overnight target enforced,PASS,positions strict target rows=True,critical,step1_strict_overnight_target_audit.csv
+target_next_overnight not in feature list,PASS,target absent from enhanced_feature_list,critical,step4_feature_catalog.csv
+OHLCV features are lagged before alpha construction,PASS,Step4 audit all_enhanced_ohlcv_features_are_lagged,critical,step4_alpha_audit.csv
+short interest point-in-time availability enforced,PASS,source-provided availability date is used with previous-trading-day asof merge; no extra publication lag applied,critical,c2o_step1_short_interest_no_lookahead_audit.csv
+earnings exclusion enforced,PASS,earn window stock-days=129523,critical,c2o_step2_earnings_window_exclusion_by_year.csv
+Step5 uses only alpha_score_final,PASS,SCORE_COL=alpha_score_final,critical,step5_selected_headline_config.json
+Step2 Q2 impact tercile CSV saved,PASS,Q2 impact at 5% cap by market-cap tercile saved for report,major,c2o_step2_q2_impact_at_cap_by_mcap_tercile.csv
+weak alpha not used in final Step5 ranking,PASS,weak alpha retained only in Step4 IC summary,critical,step4_signal_ic_summary.csv
+Ridge model fitted only on train period,PASS,Ridge fit block uses period == train; dev-test column report-only,critical,step4_regularised_linear_coefficients.csv
+validation used only for limited selection,PASS,selection grid limited to 250m/equal/tiered/predefined baskets,critical,step5_headline_selection_grid.csv
+development-test only used for reporting,PASS,dev-test rows not referenced in selection reason,critical,step5_headline_performance_summary.csv
+participation cap not breached at position level,PASS,all headline positions <= 5% ADV cap,critical,step5_positions.parquet
+no artificial over-allocation when basket cannot absorb target gross,PASS,max deployed gross ratio=1.0000,critical,step5_headline_daily_returns.csv
+long-short net exposure close to zero before costs,PASS,max abs net exposure / AUM=1.192e-16,critical,step5_headline_daily_returns.csv
+commission / slippage / borrow costs included,PASS,all three cost buckets have positive total cost,critical,step5_headline_daily_returns.csv
+gross-to-net Sharpe decomposition generated,PASS,decomposition CSV exists,major,step5_gross_to_net_sharpe_decomposition.csv
+SP500_TR benchmark QuantStats created with quantstats package,PASS,"package=True, benchmark=True, error=",critical,quantstats_250m_vs_sp500_tr.html
+QuantStats fallback not counted as PASS,PASS,fallback file does not create PASS unless package benchmark succeeds,critical,quantstats_250m_vs_sp500_tr.html
+AUM sensitivity includes 50m / 250m / 1b,PASS,"['1b', '250m', '50m']",major,step5_aum_sensitivity_brief_required_metrics.csv
+stress-window analysis generated,PASS,three stress windows generated,major,step5_stress_window_summary.csv
+statistical robustness generated,PASS,yearly/Lo/worst/top-bottom diagnostics exist,major,step5_year_by_year_performance.csv
+borrow honesty analysis generated,PASS,borrow contribution and hard-exclusion robustness exist,major,step5_borrow_honesty_contribution.csv
+Step2 preliminary screen relaxed,PASS,MIN_CAPACITY_RATIO=0.25 and ADV failures split into absolute/capacity,major,c2o_step2_prelim_tradable_universe.parquet
+Step5 remains the enforceable ADV-cap allocation stage,PASS,Step5 applies 5% ADV cap and deployed gross can be below full target,critical,step5_positions.parquet
+all required figures saved,PASS,required figures saved=True,major,outputs/figures
+all figures displayed in notebook via plt.show(block=False),PASS,tracked displayed figures=21,major,displayed_figure_files

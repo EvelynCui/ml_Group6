@@ -1,0 +1,5 @@
+metric,value
+total_raw_next_row_targets,7881623.0
+valid_strict_one_overnight_targets,7873508.0
+invalidated_non_consecutive_targets,8115.0
+invalidated_percentage,0.0010294003853750303

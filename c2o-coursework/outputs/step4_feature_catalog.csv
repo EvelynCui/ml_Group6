@@ -1,0 +1,21 @@
+feature,block,point_in_time_rule,used_in_model
+overnight_ret_1d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+intraday_ret_1d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+close_to_close_ret_1d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+ret_3d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+ret_5d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+resid_intraday_ret_1d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+resid_close_to_close_ret_1d_lag1,A_lagged_reversal,lag1 after raw/rolling calculation,True
+volume_ratio_20d_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+dollar_volume_ratio_20d_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+high_low_range_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+realized_vol_20d_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+abs_intraday_shock_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+log_adv20_dollar_lag1,B_lagged_liquidity_pressure,lag1 after raw/rolling calculation,True
+dsi_pit,C_borrow_short_pressure_pit,publication-lagged short-interest / borrow tier from Step3,True
+dtcn_pit,C_borrow_short_pressure_pit,publication-lagged short-interest / borrow tier from Step3,True
+ddtcn_pit,C_borrow_short_pressure_pit,publication-lagged short-interest / borrow tier from Step3,True
+htb_score_pct_pit,C_borrow_short_pressure_pit,publication-lagged short-interest / borrow tier from Step3,True
+borrow_bps_pa,C_borrow_short_pressure_pit,publication-lagged short-interest / borrow tier from Step3,True
+log_market_cap_lag1,D_stable_controls_lagged,lag1 after raw/rolling calculation,True
+adv20_dollar,D_stable_controls_lagged,lag1 after raw/rolling calculation,True

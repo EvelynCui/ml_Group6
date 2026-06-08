@@ -1,0 +1,4 @@
+mcap_tercile,median_daily_vol,participation_fraction,impact_bps_at_5pct_cap
+small,0.018053,0.05,28.26
+mid,0.016072,0.05,25.16
+large,0.014138,0.05,22.13

@@ -1,0 +1,12 @@
+check,passed,status
+2010-2024 development panel,True,PASS
+No 2025+ data in Step1-3 live outputs,True,PASS
+Universe uses prior year-end snapshot,True,PASS
+Universe frozen by calendar year,True,PASS
+12-month history requirement,True,PASS
+Strict next close-to-open overnight target,True,PASS
+Point-in-time liquidity fields,True,PASS
+Short interest source availability no-lookahead,True,PASS
+Step4-5 input files prepared,True,PASS
+SP500_TR benchmark prepared,True,PASS
+Step1-3 figures saved and displayed,True,PASS

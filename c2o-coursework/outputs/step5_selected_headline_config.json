@@ -1,0 +1,11 @@
+{
+  "final_alpha_score_col": "alpha_score_final",
+  "selected_final_signal_col": "signal_regularised_linear",
+  "headline_aum_label": "250m",
+  "headline_aum": 250000000,
+  "basket_frac": 0.01,
+  "weighting": "equal",
+  "short_treatment": "tiered",
+  "participation_cap": 0.05,
+  "basket_selection_reason": "Selected basket_frac=1.00% on 250m validation only. Candidates within 0.25 validation net Sharpe of the best were compared on capacity binding, cost drag, turnover, and deployed gross ratio."
+}

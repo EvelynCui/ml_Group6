@@ -1,0 +1,8 @@
+audit_item,passed,detail
+no_data_after_2024_12_31,True,2024-12-31
+no_2025_2026_data,True,2024
+no_target_used_as_feature,True,
+no_next_adj_open_used_as_feature,True,next_adj_open absent from enhanced_feature_list
+all_enhanced_ohlcv_features_are_lagged,True,
+alpha_score_final_sufficient_cross_section,True,p05 daily non-null alpha names=1000
+development_test_not_used_in_tuning,True,Signal selection used train/validation IC only; development-test columns are report-only.

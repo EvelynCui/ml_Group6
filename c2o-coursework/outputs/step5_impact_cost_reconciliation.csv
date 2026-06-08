@@ -1,0 +1,5 @@
+sigma_daily,participation_fraction,square_root_impact_bps,fixed_auction_slippage_bps_per_leg,fixed_round_trip_slippage_bps,interpretation
+0.01276209286600562,0.05,19.975835028487573,1.5,3.0,"Diagnostic only: square-root impact justifies 5% ADV cap; headline PnL uses fixed cost schedule, not double-counted impact."
+0.022254381299416953,0.05,34.83361656788748,1.5,3.0,"Diagnostic only: square-root impact justifies 5% ADV cap; headline PnL uses fixed cost schedule, not double-counted impact."
+0.03815509151043367,0.05,59.72216481353837,1.5,3.0,"Diagnostic only: square-root impact justifies 5% ADV cap; headline PnL uses fixed cost schedule, not double-counted impact."
+0.05441326546121891,0.05,85.17023231431884,1.5,3.0,"Diagnostic only: square-root impact justifies 5% ADV cap; headline PnL uses fixed cost schedule, not double-counted impact."

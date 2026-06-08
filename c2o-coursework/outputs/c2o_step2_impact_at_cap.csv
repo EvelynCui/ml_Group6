@@ -1,0 +1,4 @@
+sigma_daily,participation_fraction,square_root_impact_bps,fixed_round_trip_slippage_bps
+0.01,0.05,15.652475842498525,3.0
+0.02,0.05,31.30495168499705,3.0
+0.03,0.05,46.95742752749558,3.0

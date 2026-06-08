@@ -1,0 +1,6 @@
+parameter,value
+BORROW_TIER_METHOD,simple
+Tier A cost bps,40.0
+Tier B cost bps,200.0
+Tier C cost bps,800.0
+Missing SI default,Tier A
